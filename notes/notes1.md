@@ -91,10 +91,10 @@ yyyy:mm:dd hh:ii:ss
 
 #### 初始化时间选择器  设置时分秒
 ```javascript  
-    datepickerClass.init("js-p-coupon-couponsend-selecttime",
-    {
-        hideEnd:true,format:"yyyy-mm-dd hh:ii:00",minView:"hour",setStartDateForBegin:new Date()
-    });
+datepickerClass.init("js-p-coupon-couponsend-selecttime",
+{
+    hideEnd:true,format:"yyyy-mm-dd hh:ii:00",minView:"hour",setStartDateForBegin:new Date()
+});
 setStartDateForBegin：xxx //设置选择时间限制
 ```
 #### 获取URL中某个参数值
