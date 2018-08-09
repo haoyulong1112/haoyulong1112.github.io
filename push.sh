@@ -6,6 +6,7 @@ sh build.sh
 
 # 进入生成的文件夹
 cd .vuepress/dist
+pwd
 
 # 如果是发布到自定义域名
 # echo 'www.example.com' > CNAME
@@ -13,6 +14,7 @@ cd .vuepress/dist
 git init
 git config user.name haoyulong
 git config user.email 875720242@qq.com
+git remote add origin git@github.com:haoyulong1112/haoyulong1112.github.io.git
 now=$(date +%Y-%m-%d)
 git add .
 git commit -m'update '${now}
@@ -21,10 +23,14 @@ git commit -m'update '${now}
 # git push -f git@github.com:<USERNAME>/<USERNAME>.github.io.git master
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO>
-git push -f git@github.com:haoyulong1112/haoyulong1112.github.io.git
+git pull origin master
+git push -u origin master
 
 cd -
+pwd
 # https://haoyulong1112.github.io
 git add .
 git commit -m'update '${now}
-git push
+git pull origin master
+git push origin master
+
