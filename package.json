@@ -1,0 +1,7 @@
+{
+  "name": "notes-vuepress",
+  "author": "haoyulong",
+  "devDependencies": {
+    "vuepress": "^0.12.0"
+  }
+}
