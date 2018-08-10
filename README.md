@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: https://avatars3.githubusercontent.com/u/41320481?s=400&u=2a9b92f8553e289e413e3afae0f7630136923003&v=4
+heroImage: https://avatars1.githubusercontent.com/u/41320481?s=400&u=760d89d4958d68cc324737cebf64182f92b08d8d&v=4
 actionText: 开始 →
 actionLink: /notes/
 ---
