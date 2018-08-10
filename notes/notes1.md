@@ -74,7 +74,7 @@ yyyy:mm:dd hh:ii:ss
 5. 配置页面显示 http://192.168.0.248/mis/manage/roleusedpage 超管账号 全选 保存
 ```
 #### smarty语法
-```ruby
+```javascript
 1. 页面打印{%var_dump($count)%}  {%var_dump($pn)%} {%var_dump($rn)%}
 2. {%if $xxx==$xxx%}selected{%/if%}  条件判断
 3. 查询或者搜索时  刷新页面后输入框中值不清空 smarty语法解决办法：input中value = {参数值}
@@ -99,47 +99,48 @@ setStartDateForBegin：xxx //设置选择时间限制
 ```
 #### 获取URL中某个参数值
 ```javascript
-    var activityId = window.location.search.substr(1).split("&")[1].split('=')[1];
+var activityId = window.location.search.substr(1).split("&")[1].split('=')[1];
 ```
 #### decodeURI解码
 ```javascript
-    decodeURIComponent('\u64cd\u4f5c\u5931\u8d25')   
+decodeURIComponent('\u64cd\u4f5c\u5931\u8d25')   
 ```
 ### jQuery获取属性值
     $("xxx").prop("属性");
 ### 模板渲染时分固定个数为一行或者一列时
 ```javascript
-    for(var j in dataset){
-        var tr = ''
-        if (j>0 && j%5==0 && j!=dataset.length) {
-            tr = '</tr><tr>'
-        }
-        $tabletpltrs += tr + '<td class="text-center"'+ 'data-workerid="'+dataset[j].id+'">'+dataset[j].num+'</td>'
+for(var j in dataset){
+    var tr = ''
+    if (j>0 && j%5==0 && j!=dataset.length) {
+         tr = '</tr><tr>'
     }
+    $tabletpltrs += tr + '<td class="text-center"'+ 'data-workerid="'+dataset[j].id+'">'+dataset[j].num+'</td>'
+}
 ```
 ### 时间选择器初始化
 条件：隐藏后面选择框并显示时间到分钟
 ```javascript
 datepickerClass.init(timeDateid, {
-            hideEnd: true, format: 'yyyy-mm-dd hh:ii:00',
-            startView: 0,
-            minView: 0
-       });
+        hideEnd: true, format: 'yyyy-mm-dd hh:ii:00',
+        startView: 0,
+        minView: 0
+    });
 ```
 ### 更改输入框中的placeholder
-```
+
 方法一：
+```
 xxx.attr("placeholder","aaa");
 ```
 ### 启动从git上clone的vue项目
 ```
-    1. npm install 或者 npm yarn
-    2. npm run dev
+1. npm install 或者 npm yarn
+2. npm run dev
 ```
 ### 报错
 ```
-    npm WARN deprecated coffee-script@1.12.7: CoffeeScript on NPM has moved to "coffeescript" (no hyphen)
-    依赖包过时不影响
+npm WARN deprecated coffee-script@1.12.7: CoffeeScript on NPM has moved to "coffeescript" (no hyphen)
+依赖包过时不影响
 ```
 ### PHP文件使用git时
 ```ruby
