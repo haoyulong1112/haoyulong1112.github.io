@@ -4,3 +4,5 @@ heroImage:
 actionText: 开始 →
 actionLink: /notes/
 ---
+
+# hello
